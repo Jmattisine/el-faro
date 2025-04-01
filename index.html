@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El Faro - Periódico Local</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            background-color: #444;
+            padding: 10px;
+        }
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+        nav ul li {
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        main {
+            padding: 20px;
+        }
+        article {
+            margin-bottom: 30px;
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 20px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+        th, td {
+            padding: 12px;
+            text-align: left;
+        }
+        th {
+            background-color: #f4f4f4;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            margin-top: 20px;
+        }
+        .logo {
+            height: 80px;
+            margin-bottom: 10px;
+        }
+        .media-container {
+            margin: 20px 0;
+            text-align: center;
+        }
+        video, audio {
+            max-width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="https://via.placeholder.com/150x80?text=Logo+El+Faro" alt="Logo El Faro" class="logo">
+        <h1>El Faro - Periódico Local</h1>
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#deportes">Deporte</a></li>
+            <li><a href="#negocios">Negocios</a></li>
+        </ul>
+    </nav>
+    
+    <main>
+        <section id="inicio">
+            <h2>Últimas Noticias</h2>
+            
+            <article>
+                <h3>Inauguran nuevo parque municipal</h3>
+                <p><strong>Categoría:</strong> Comunidad</p>
+                <p>El alcalde inauguró ayer el nuevo parque central que contó con una inversión de $2 millones. El espacio incluye áreas verdes, juegos infantiles y una pista para caminar.</p>
+                <div class="media-container">
+                    <video width="600" controls>
+                        <source src="https://samplelib.com/lib/preview/mp4/sample-5s.mp4" type="video/mp4">
+                        Tu navegador no soporta el elemento de video.
+                    </video>
+                </div>
+            </article>
+            
+            <h3>Otras Noticias</h3>
+            <table>
+                <tr>
+                    <th>Título</th>
+                    <th>Categoría</th>
+                    <th>Resumen</th>
+                </tr>
+                <tr>
+                    <td>Nueva biblioteca pública</td>
+                    <td>Educación</td>
+                    <td>La ciudad estrenará biblioteca con más de 10,000 ejemplares disponibles para préstamo.</td>
+                </tr>
+                <tr>
+                    <td>Aumento en tarifas de transporte</td>
+                    <td>Transporte</td>
+                    <td>A partir del próximo mes, el pasaje de bus urbano aumentará un 10% según anuncio la municipalidad.</td>
+                </tr>
+                <tr>
+                    <td>Festival gastronómico este fin de semana</td>
+                    <td>Cultura</td>
+                    <td>Los mejores restaurantes de la ciudad participarán en el festival que se realizará en la plaza principal.</td>
+                </tr>
+            </table>
+            
+            <div class="media-container">
+                <h3>Escuche nuestro podcast diario</h3>
+                <audio controls>
+                    <source src="https://samplelib.com/lib/preview/mp3/sample-3s.mp3" type="audio/mp3">
+                    Tu navegador no soporta el elemento de audio.
+                </audio>
+            </div>
+        </section>
+        
+        <section id="deportes" style="display: none;">
+            <h2>Noticias de Deportes</h2>
+            
+            <article>
+                <h3>Equipo local clasifica a torneo nacional</h3>
+                <p><strong>Categoría:</strong> Fútbol</p>
+                <p>El equipo de fútbol de la ciudad logró su pase al torneo nacional tras vencer 2-1 en el partido de clasificación.</p>
+                <img src="https://via.placeholder.com/600x300?text=Partido+de+Fútbol" alt="Partido de fútbol" style="width:100%; max-width:600px;">
+            </article>
+            
+            <h3>Otras Noticias Deportivas</h3>
+            <table>
+                <tr>
+                    <th>Título</th>
+                    <th>Categoría</th>
+                    <th>Resumen</th>
+                </tr>
+                <tr>
+                    <td>Maratonista local gana competencia regional</td>
+                    <td>Atletismo</td>
+                    <td>Juan Pérez completó el maratón en 2 horas 15 minutos, estableciendo nuevo récord regional.</td>
+                </tr>
+                <tr>
+                    <td>Inauguran nueva piscina olímpica</td>
+                    <td>Natación</td>
+                    <td>Las instalaciones estarán abiertas al público a partir del próximo lunes.</td>
+                </tr>
+                <tr>
+                    <td>Selección juvenil de básquetbol inicia preparación</td>
+                    <td>Básquetbol</td>
+                    <td>El equipo se prepara para el campeonato sudamericano que se realizará en noviembre.</td>
+                </tr>
+            </table>
+        </section>
+        
+        <section id="negocios" style="display: none;">
+            <h2>Noticias de Negocios</h2>
+            
+            <article>
+                <h3>Nueva startup local recibe inversión millonaria</h3>
+                <p><strong>Categoría:</strong> Emprendimiento</p>
+                <p>TechSolutions, empresa fundada por jóvenes de la ciudad, recibió $5 millones de dólares en financiamiento de capital de riesgo.</p>
+                <img src="https://via.placeholder.com/600x300?text=Startup+Local" alt="Startup local" style="width:100%; max-width:600px;">
+            </article>
+            
+            <article>
+                <h3>Inauguran nuevo centro comercial</h3>
+                <p><strong>Categoría:</strong> Comercio</p>
+                <p>Con una inversión de $50 millones, el nuevo centro comercial abrirá sus puertas el próximo mes con más de 100 tiendas.</p>
+            </article>
+            
+            <article>
+                <h3>Taller para emprendedores este sábado</h3>
+                <p><strong>Categoría:</strong> Capacitación</p>
+                <p>La cámara de comercio organiza un taller gratuito sobre marketing digital para pequeños negocios.</p>
+            </article>
+        </section>
+    </main>
+    
+    <footer>
+        <p>&copy; 2023 El Faro - Todos los derechos reservados</p>
+        <p>Contacto: info@elfaro.com | Teléfono: 555-1234</p>
+    </footer>
+
+    <script>
+        // Función para mostrar la sección seleccionada y ocultar las demás
+        document.querySelectorAll('nav a').forEach(link => {
+            link.addEventListener('click', function(e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href').substring(1);
+                
+                // Ocultar todas las secciones
+                document.querySelectorAll('main section').forEach(section => {
+                    section.style.display = 'none';
+                });
+                
+                // Mostrar la sección seleccionada
+                document.getElementById(targetId).style.display = 'block';
+            });
+        });
+        
+        // Mostrar la sección de inicio por defecto
+        document.getElementById('inicio').style.display = 'block';
+    </script>
+</body>
+</html>
